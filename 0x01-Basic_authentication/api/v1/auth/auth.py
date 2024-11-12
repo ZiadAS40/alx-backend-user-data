@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 """ making the class for the authentication
 """
 from typing import List, TypeVar
