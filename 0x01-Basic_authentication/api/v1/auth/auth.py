@@ -1,11 +1,11 @@
 #!usr/bin/env python3
 """ making the class for the authentication
 """
-from flask import request
 from typing import List, TypeVar
+from flask import request
 
 
-class Auth():
+class Auth:
     """
     the class used for the authentication
     """
