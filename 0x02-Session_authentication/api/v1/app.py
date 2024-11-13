@@ -21,7 +21,7 @@ elif os.getenv("AUTH_TYPE") == 'basic_auth':
     auth = BasicAuth()
 elif os.getenv("AUTH_TYPE") == 'session_auth0':
     from api.v1.auth.session_auth import SessionAuth
-    auth = SessionAuth
+    auth = SessionAuth()
 
 
 @app.errorhandler(404)
