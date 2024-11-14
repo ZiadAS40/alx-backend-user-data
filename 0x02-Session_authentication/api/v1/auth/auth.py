@@ -3,6 +3,7 @@
 """
 from typing import List, TypeVar
 from flask import request
+import os
 
 
 class Auth:
@@ -45,3 +46,15 @@ class Auth:
         just return None for now
         """
         return None
+
+    def session_cookie(self, request=None):
+        """
+        return the cookie value
+        from a request
+        """
+        if not request:
+            return None
+
+        cookie_name = os.getenv("SESSION_NAME")
+
+        return request.cookies.get(cookie_name)
